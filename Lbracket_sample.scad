@@ -24,16 +24,16 @@ module l_bracket() {
 
             hull() {
 
-                //translate([-40, 60, 0]) cylinder(h=10, r=10); // Front-left corner
+                translate([-40, 60, 0]) cylinder(h=10, r=10); // Front-left corner
 
-                //translate([ 40, 60, 0]) cylinder(h=10, r=10); // Front-right corner
+                translate([ 40, 60, 0]) cylinder(h=10, r=10); // Front-right corner
 
                 translate([-50, -10, 0]) cube([100, 10, 10]); // Square back edge to merge cleanly
 
             }
 
            
-/*
+
             // 2. Vertical Flange (100mm tall, 100mm wide, 10mm thick)
 
             // Includes Phase 5 Cosmetic Outer Fillets (10mm radius) at the top
@@ -123,9 +123,10 @@ module l_bracket() {
         translate([ 30, 1, 80]) rotate([90, 0, 0]) cylinder(h=12, r=4.5, $fn=30);
 
     }
-*/
+
 }
 
 // Render the final model
 
-color("Silver") l_bracket(); 
+color("Silver") 
+l_bracket(); 
