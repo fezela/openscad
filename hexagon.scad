@@ -2,7 +2,7 @@ square = 95;
 points = [for (i=[0:60:359]) let(
     y=(square/2) * sin(i),
     x=(square/2) * cos(i),
-    z=square
+    z=5
 )
     each [
         [x,y,z], //top
@@ -19,5 +19,5 @@ faces = [
     [8,10,11,9],
     [10,0,1,11]
     ];
-
-polyhedron(points,faces)
+color("green")
+polyhedron(points,faces);
