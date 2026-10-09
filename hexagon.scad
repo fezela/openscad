@@ -1,4 +1,4 @@
-square = 95;
+square = 15;
 points = [for (i=[0:60:359]) let(
     y=(square/2) * sin(i),
     x=(square/2) * cos(i),
