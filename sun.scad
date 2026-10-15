@@ -29,4 +29,10 @@ translate([7.75,6,1.1])
     rotate([0,0,45])
     triangle(2,2,1,1);
     
-//translate(
+translate([2.15,3.85,1.1])
+    rotate([0,0,225])
+    triangle(2,2,1,1);
+    
+translate([6.15,2.45,1.1])
+    rotate([0,0,315])
+    triangle(2,2,1,1);
